@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio de Nathanaël RAKOTONDRAHASY, Développeur Web.">
+  <title>Nathanaël RAKOTONDRAHASY — Portfolio</title>
+  <link rel="stylesheet" href="portfolio.css">
+  <script src="portfolio.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navigation" aria-label="Navigation principale">
+      <a class="logo" href="#accueil">
+        <img src="img/logo.png" alt="Nathanaël RAKOTONDRAHASY">
+      </a>
+      <ul class="nav-links">
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="accueil">
+      <p>Bonjour, je suis</p>
+      <h1>Nathanaël<br> RAKOTONDRAHASY, <br><span>Développeur, Intégrateur, Designer Web</span></h1>
+      <p>Je conçois des expériences web qui allie design, fonctionnalité et simplicité.</p>
+      <a class="button" href="#projets">Découvrir mes projets</a>
+    </section>
+    <section class="section" id="projets">
+      <h2>Mes projets</h2>
+        <p>Découvrez quelques-unes de mes réalisations et projets en cours. De nouvelles créations viendront bientôt enrichir ce portfolio : maquettes UI/UX sur Figma, développement de mon portfolio interactif en JavaScript et conception d'une application mobile. Ce portfolio continuera d'évoluer au fil de mes nouvelles expériences et réalisations.</p>
+      <div class="image-intro">
+        <div class="container">
+          <img src="img/Desktop - 1.jpg" alt="image-intro">
+        </div>
+      </div>
+    </section>
+    <section class="section project-details" id="uxui">
+      <fieldset class="video-project">
+        <h2>HTML / CSS</h2>
+        <p>Conception et intégration d'un formulaire en HTML et CSS dans le cadre d'un projet académique, avec mise en page utilisant Flexbox et CSS Grid, et personnalisation des styles.</p>
+        <video class="project-video" controls autoplay muted playsinline aria-label="Vidéo de présentation">
+          <source src="Vid/formulaire_scroll.mp4" type="video/mp4">
+        </video>
+      </fieldset>
+      <fieldset class="wireframe">
+        <h2>Wireframe</h2>
+        <p>Conception d'un wireframe sur Figma pour un site web WordPress, avec définition de la structure des pages et organisation des contenus.</p>
+        <div class="image-gallery">
+          <button class="image-open image-open--wide" type="button" aria-label="Agrandir l’aperçu du projet wireframe"><img src="img/Desktop - 1 (1).jpg" alt="Aperçu du projet wireframe"></button>
+        </div>
+      </fieldset>
+      <fieldset>
+        <h2>UI</h2>
+          <p>Conception d'une maquette UI/UX pour un site web de VTC, avec création de l'interface et organisation des différents éléments de navigation.</p>
+        <div class="image-gallery ui-gallery">
+          <button class="image-open" type="button" aria-label="Agrandir l’aperçu du projet UX/UI 1"><img src="img/P1Frame_1.png" alt="Aperçu du projet UX/UI 1"></button>
+          <button class="image-open" type="button" aria-label="Agrandir l’aperçu du projet UX/UI 2"><img src="img/P1Frame_2.png" alt="Aperçu du projet UX/UI 2"></button>
+          <button class="image-open" type="button" aria-label="Agrandir l’aperçu du projet UX/UI 3"><img src="img/P1Frame_3.png" alt="Aperçu du projet UX/UI 3"></button>
+          <button class="image-open" type="button" aria-label="Agrandir l’aperçu du projet UX/UI 4"><img src="img/P1Frame_4.png" alt="Aperçu du projet UX/UI 4"></button>
+        </div>
+      </fieldset>
+      <fieldset class="ux-mapping">
+        <h2>UX</h2>
+          <p>Analyse d'un site web existant afin d'identifier les problèmes d'ergonomie et de navigation, puis proposer des axes d'amélioration pour optimiser le parcours utilisateur et l'expérience UX.</p>
+        <div class="image-gallery">
+          <button class="image-open image-open--wide" type="button" aria-label="Agrandir l’aperçu du projet UX"><img src="img/User%20Mapping%20Nathanaël.png" alt="Aperçu du projet UX"></button>
+        </div>
+      </fieldset>
+    </section>
+
+    <section class="section about" id="apropos">
+      <h2>À propos</h2>
+      <p>Étudiant en Licence Professionnelle Métiers du Numérique, parcours Intégration et Webdesign à l'EiSINe, je développe des compétences en conception d'interfaces UX/UI, intégration web.</p>
+      <p>Mon approche : transformer les idées et les besoins en expériences numériques intuitives, cohérentes et efficaces.</p>
+      <p>Actuellement à la recherche d'un stage de 3 mois minimum à partir de mars 2027.</p>
+    </section>
+
+    <section class="section contact" id="contact">
+      <h2>Me contacter</h2>
+      <p>Vous avez un projet ou une question ? Écrivez-moi.</p>
+      <a class="linkedin-link" href="https://www.linkedin.com/in/nathana%C3%ABl-rakotondrahasy-5418a5265/" aria-label="LinkedIn">
+        <span aria-hidden="true">in</span>
+      </a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 [Nathanaël RAKOTONDRAHASY - étudiant en LP CRRW - EISINE Charleville-Mézières]</p>
+  </footer>
+
+  <dialog class="image-viewer" id="image-viewer" aria-label="Visionneuse d’images">
+    <button class="viewer-close" type="button" aria-label="Fermer l’image agrandie">×</button>
+    <p class="viewer-help">Glissez l’image pour la déplacer · Molette ou boutons pour zoomer</p>
+    <div class="viewer-stage" role="group" aria-label="Zone de déplacement de l’image agrandie">
+      <img class="viewer-image" alt="">
+    </div>
+    <div class="zoom-controls" aria-label="Commandes de zoom">
+      <button class="zoom-out" type="button" aria-label="Réduire le zoom">−</button>
+      <button class="zoom-reset" type="button" aria-label="Réinitialiser le zoom">100%</button>
+      <button class="zoom-in" type="button" aria-label="Agrandir le zoom">+</button>
+    </div>
+  </dialog>
+</body>
+</html>
